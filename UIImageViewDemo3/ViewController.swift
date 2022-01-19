@@ -14,25 +14,33 @@ class ViewController: UIViewController
     
     var x = 0
     
-    let myImage = UIImage(named: "Cute cat")
+    
     
     override func viewDidLoad()
     {
         super.viewDidLoad()
         // Do any additional setup after loading the view.
+        myLmageView.image = UIImage(named: "Cute cat")
     }
 
     @IBAction func changetheImage(_ sender: UIButton)
     {
         x+=1
-        if x is  {
-            <#code#>
+        if x == 1 { myLmageView.image = UIImage (named: "kirby")
+            
+        
+            
+           
+            
         }
-        myLmageView.image = UIImage (named: "kirby")
+        else if x==2 {
+        myLmageView.image = UIImage (named: "Cute cat")
+        } else {
+            x=0
+            myLmageView.image = UIImage (named: "kirby")
+        }
         
-        let myImage = UIImage (named: "kirby")
         
-        myLmageView.image = myImage
     }
     
 }
